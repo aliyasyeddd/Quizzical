@@ -54,7 +54,7 @@ Reflect briefly on your takeaways:
 
 ## 🖼️ Screenshots / Demo  
 
-![App Screenshot](./images/demo.png)  
+![App Screenshot](./src/assets/demo.png)  
 
 🔗 **Live Demo:** [https://your-demo-link.vercel.app](https://your-demo-link.vercel.app)  
 
