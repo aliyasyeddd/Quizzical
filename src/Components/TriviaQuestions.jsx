@@ -1,13 +1,14 @@
 
+const TriviaQuestions = ({ questions }) => {
 
-const TriviaQuestions = () => {
-
-  
   return (
-    <div>
-      <h2>Questions</h2>
+    <div className="quiz-container">
+      {questions.map((question, index) => (
+        <h2 className="question" key={index}>{question.question}</h2>
+      ))}
     </div>
   );
 };
 
 export default TriviaQuestions;
+
