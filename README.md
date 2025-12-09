@@ -1,4 +1,4 @@
-#  Quizzical 
+#  Quizzical {in progress}
 
 > A brief one-liner about your project — what it does and why it’s useful.  
 > _Example: A simple, responsive web app that helps users find the perfect meme based on their mood._  
