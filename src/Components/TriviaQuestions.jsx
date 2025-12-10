@@ -12,21 +12,26 @@ const shuffle = (array) => {
 };
 
 const TriviaQuestions = ({ questions }) => {
+
+
   const quizQuestions = questions.map((question, index) => {
     const options = [question.correct_answer, ...question.incorrect_answers];
     const shuffledOptions = shuffle(options);
-    console.log(shuffledOptions);
     return (
       <div key={index} className="question-block">
         <h2 className="question">{question.question}</h2>
-        <ul className="options-list">
+        <form className="options-form">
           {shuffledOptions.map((option, i) => (
-            <li key={i}>{option}</li>
+            <label key={i} className="option-label">
+              <input type="radio" name="question-options" value={option} />
+              <span>{option}</span>
+            </label>
           ))}
-        </ul>
+        </form>
       </div>
     );
   });
+
 
   return (
     <div className="quiz-page">

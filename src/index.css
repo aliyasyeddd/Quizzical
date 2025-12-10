@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover;
-  padding: 50px;   
+  padding: 80px;   
 }
 
 
@@ -66,28 +66,34 @@ body {
   font-weight: 600;
 }
 
-.options-list {     
+.options-form {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
-
-.options-list li::before {
-  content: none !important;
+.option-label {
+  display: inline-flex;
+  cursor: pointer;
+   margin-bottom: 22px;
 }
 
-.options-list li {
-  display: inline-block;   
-  width: fit-content;       
-  padding: 8px 16px;       
-  color: #293264;
+.option-label input[type="radio"] {
+  display: none;  /* hide native radio circle */
+}
+
+.option-label span {
+  display: inline-block;
+  padding: 8px 16px;
   border: 2px solid #4D5B9E;
   border-radius: 18px;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;      
-  margin: 4px;
-  font-size: 1.1rem;
+  color: #293264;
+  white-space: nowrap;
+  width: fit-content;   /* adjusts to text length */
 }
+
+.option-label input[type="radio"]:checked + span {
+  background-color: #d6dbf5;
+  border: none;
+}
+
