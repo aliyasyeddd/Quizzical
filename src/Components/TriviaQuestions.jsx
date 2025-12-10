@@ -33,6 +33,8 @@ const TriviaQuestions = ({ questions }) => {
   });
 
 
+
+  
   return (
     <div className="quiz-page">
       <div className="quiz-container">{quizQuestions}</div>
